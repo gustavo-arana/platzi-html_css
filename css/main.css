@@ -1,8 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/*------------------------- Variables -----------------------*/
+:root {
+--green-color: #7ACC2D;
+--white-color: white;
+--black-color: #313337;
+
+/* espaciado */
+--normal: 12px;
+
+/* espaciado */
+--space: 10px;
+
+/* box shadow*/
+--box: 0px 2px 1px #e6e5e9;
+}
+
 html, body {
     padding: 0px;
     margin: 0px;
-    font-size: 12px;
-    font-family: Helvetica;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* ------------------- Header Section -----------------*/
@@ -10,9 +27,9 @@ html, body {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: #7ACC2D;
-    padding: 10px;
-    color: white;
+    background-color: var(--green-color);
+    padding: var(--space);
+    color: var(--white-color);
     align-items: center;
 }
 
@@ -26,12 +43,12 @@ nav ul li {
 }
 
 nav li a {
-    color: gray;
+    color: var(--black-color);
     text-decoration: none;
 }
 
 nav li a:hover {
-    color: white;
+    color: var(--white-color);
 }
 
 /* ------------------- Main Section -----------------*/
@@ -51,14 +68,14 @@ nav li a:hover {
 }
 
 .product{
-    padding: 10px;
+    padding: var(--space);
     margin-top: -240px;
 }
 
 .product .content {
-    background-color:white;
+    background-color:var(--white-color);
     padding: 15px;
-    box-shadow: 0 0 1px #c1bcbc;
+    box-shadow: var(--box);
 }
 
 .image_content {
@@ -66,11 +83,11 @@ nav li a:hover {
 }
 
 .main_button {
-    background-color: #7ACC2D;
+    background-color: var(--green-color);
     width: 100%;
-    padding: 10px;
-    font-size: 12px;
-    color: white;
+    padding: var(--space);
+    font-size: var(--normal);
+    color: var(--white-color);
     border: 0;
     border-radius: 2px;
 }

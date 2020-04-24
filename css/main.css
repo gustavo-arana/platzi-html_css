@@ -98,7 +98,7 @@ nav li a:hover {
 }
 
 
-.specifications {
+.benefitions {
     display: flex;
     flex-wrap: center;
     align-items: center;
@@ -106,7 +106,7 @@ nav li a:hover {
     padding: 5% 10%;
 }
 
-.specificacion {
+.benefition {
     max-width: 200px;
     margin: 20px 50px;
     padding: var(--space);
@@ -114,18 +114,17 @@ nav li a:hover {
     text-align: justify;
 }
 
-.specificacion h3 {
+.benefition h3 {
     margin: var(--space);
 }
-.specification_image {
+.benefition_image {
     text-align: center;
     margin-bottom: var(--space);
 }
 
-.specification_image img {
+.benefition_image img {
     max-width: 160px;
 }
-
 
 .mentions {
     box-shadow: var(--box);

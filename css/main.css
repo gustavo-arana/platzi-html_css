@@ -12,7 +12,7 @@
 --space: 10px;
 
 /* box shadow*/
---box: 0px 2px 1px #e6e5e9;
+--box: 0px 3px 6px #00000029;;
 }
 
 html, body {
@@ -95,4 +95,81 @@ nav li a:hover {
 .main_button:hover {
     background-color: #599e22;
     cursor: pointer;    
+}
+
+
+.specifications {
+    display: flex;
+    flex-wrap: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 10%;
+}
+
+.specificacion {
+    max-width: 200px;
+    margin: 20px 50px;
+    padding: var(--space);
+    border-collapse: collapse;
+    text-align: justify;
+}
+
+.specificacion h3 {
+    margin: var(--space);
+}
+.specification_image {
+    text-align: center;
+    margin-bottom: var(--space);
+}
+
+.specification_image img {
+    max-width: 160px;
+}
+
+
+.mentions {
+    box-shadow: var(--box);
+    text-align: center;
+    padding: 60px 10%;
+    border-top: 1px solid #ededed
+}
+
+.mentions h1 {
+    padding-bottom: 30px;
+    margin: 0px;
+}
+
+
+.mention_list {
+    background-color: var(--white-color);
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.mention {
+    max-width: 240px;
+    box-shadow: var(--box);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.mention_detail {
+    padding: var(--space);
+    padding-top: 5px;
+    text-align: justify;
+}
+
+.mention_detail h3 {
+    margin: 0px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 0 var(--space);
+    height: 60px;
 }

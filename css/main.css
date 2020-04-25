@@ -27,10 +27,12 @@ html, body {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: var(--green-color);
-    padding: var(--space);
-    color: var(--white-color);
     align-items: center;
+    width: 100%;
+    padding: var(--space);
+    min-height: 60px;
+    background-color: var(--green-color);
+    color: var(--white-color);
 }
 
 nav ul {
@@ -60,90 +62,75 @@ nav li a:hover {
 
 .products {
     background-image: url('../images/curve.png');
-    max-height: 50px;
-    background-size: cover;
+    padding: 15%;
     background-position: center top;
-    padding: 20%;
+    background-repeat: no-repeat;
     display: flex;
+    height: 95px;
+    background-size: cover;
 }
 
 .product{
-    padding: var(--space);
-    margin-top: -240px;
+    padding: 20px;
+    margin-top: -226px;
 }
 
-.product .content {
+.content-product {
+    padding: 20px;
     background-color:var(--white-color);
-    padding: 15px;
+    border-radius: 3px;
     box-shadow: var(--box);
 }
 
-.image_content {
+.image-product {
     text-align: center;
 }
 
 .main_button {
+    padding: var(--space);
     background-color: var(--green-color);
     width: 100%;
-    padding: var(--space);
-    font-size: var(--normal);
-    color: var(--white-color);
     border: 0;
     border-radius: 2px;
+    cursor: pointer;
+    color: var(--white-color);
+    font-size: var(--normal);
 }
 
 .main_button:hover {
     background-color: #599e22;
-    cursor: pointer;    
 }
 
 
 .benefitions {
+    padding: 10%;
     display: flex;
-    flex-wrap: center;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5% 10%;
 }
 
 .benefition {
-    max-width: 200px;
-    margin: 20px 50px;
-    padding: var(--space);
-    border-collapse: collapse;
+    text-align: center;
+    padding: 20px;
+}
+
+.content-benefition img {
+    max-height: 100px;
+}
+
+.text-benefition {
     text-align: justify;
 }
 
-.benefition h3 {
-    margin: var(--space);
-}
-.benefition_image {
-    text-align: center;
-    margin-bottom: var(--space);
+hr {
+    border: 1px solid #ededed
 }
 
-.benefition_image img {
-    max-width: 160px;
+.title-mention {
+    text-align: center;
 }
 
 .mentions {
-    box-shadow: var(--box);
-    text-align: center;
-    padding: 60px 10%;
-    border-top: 1px solid #ededed
-}
-
-.mentions h1 {
-    padding-bottom: 30px;
-    margin: 0px;
-}
-
-
-.mention_list {
-    background-color: var(--white-color);
     display: flex;
-    text-align: center;
-    justify-content: space-between;
+    padding: 5%;
 }
 
 .mention {
@@ -151,24 +138,25 @@ nav li a:hover {
     box-shadow: var(--box);
     border-radius: 2px;
     overflow: hidden;
+    margin: 0 var(--space);
 }
 
-.mention_detail {
+.mention img {
+    width: 100%;
+}
+
+.detail-mention {
     padding: var(--space);
     padding-top: 5px;
     text-align: justify;
 }
 
-.mention_detail h3 {
-    margin: 0px;
-}
-
 footer {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--black-color);
-    color: var(--white-color);
     padding: 0 var(--space);
-    height: 60px;
+    color: var(--white-color);
+    max-height: 60px;
 }

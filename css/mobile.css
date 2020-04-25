@@ -13,8 +13,23 @@
         margin-top: auto;
     }
 
-    .benefitions .mention_list{
+    .benefitions{
         display: inherit;
     }
 
+    .content-benefition {
+        max-width: 250px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .mentions{
+        display: inherit;
+    }
+
+    .mention {
+        max-width: 250px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
 }
